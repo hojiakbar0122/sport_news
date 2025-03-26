@@ -2,7 +2,6 @@ const express = require('express');
 const pool = require('../config/db'); // Assuming you are using a PostgreSQL database
 const { errorHandler } = require('../helpers/error_handler');
 
-const router = express.Router();
 
 const addNewUser = async (req, res) => {
     try {

@@ -10,6 +10,10 @@ const commentsRoute = require("./comments.routes");
 const reportsRoute = require("./reports.routes");
 const likesRoute = require("./likes.routes");
 const viewsRoute = require("./views.routes");
+const tagsRoute = require("./tags.routes");
+const NewsTagsRoute = require("./news_tags.routes");
+const notificationsRoute = require("./notifications.routes");
+const authorsRoute = require("./authors.routes");
 
 router.use("/langs", langsRoute);
 router.use("/news", newsRoute);
@@ -21,6 +25,10 @@ router.use("/comments", commentsRoute);
 router.use("/reports", reportsRoute);
 router.use("/likes", likesRoute);
 router.use("/views", viewsRoute);
+router.use("/tags", tagsRoute);
+router.use("/newsTags", NewsTagsRoute);
+router.use("/notifications", notificationsRoute);
+router.use("/authors", authorsRoute);
 
 module.exports = router;
 
